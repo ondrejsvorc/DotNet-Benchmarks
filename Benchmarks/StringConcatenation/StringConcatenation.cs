@@ -3,7 +3,7 @@
 namespace Benchmarks.StringConcatenation;
 
 /// <summary>
-/// Static class with all string benchmark methods.
+/// Static class with all string concatenation benchmark methods.
 /// </summary>
 public static class StringConcatenation
 {

@@ -4,10 +4,10 @@ using Benchmarks.Common;
 namespace Benchmarks.StringConcatenation;
 
 [MemoryDiagnoser]
-public class StringBenchmarks
+public class StringConcatenationBenchmarks
 {
     /// <summary>
-    /// Array of strings to concatenate.
+    /// Collection of strings to concatenate.
     /// </summary>
     private List<string> _strings = null!;
 
@@ -18,6 +18,7 @@ public class StringBenchmarks
     public void Setup()
     {
         _strings = new List<string>();
+
         for (int i = 0; i < StringAmount; i++)
         {
             _strings.Add($"Item {i}");
