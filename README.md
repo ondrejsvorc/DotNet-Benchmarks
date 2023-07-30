@@ -62,4 +62,29 @@ The purpose of these benchmarks is to help developers identify the most efficien
 | ConvertToInt32 |            8 | 17.723 ns | 0.2057 ns | 0.1823 ns | 17.682 ns | 18.01 ns |         - |
 |       IntParse |            9 | 19.367 ns | 0.4147 ns | 0.5392 ns | 19.129 ns | 20.36 ns |         - |
 |    IntTryParse |            9 | 19.216 ns | 0.4116 ns | 0.7100 ns | 18.971 ns | 20.70 ns |         - |
-| ConvertToInt32 |            9 | 20.692 ns | 0.4461 ns | 0.8378 ns | 20.305 ns | 22.19 ns |         - |
+| ConvertToInt32 |            9 | 20.692 nss | 0.4461 ns | 0.8378 ns | 20.305 ns | 22.19 ns |         - |
+
+## Numbers Sum Benchmarks
+- **sum using for loop**
+- **sum using foreach loop**
+- **sum using LINQ .Sum() method**
+- **sum using mathematics formula for sum of arithmetic progression**
+
+|                   Method | NumbersAmount |            Mean |         Error |        StdDev | Allocated |
+|------------------------- |-------------- |----------------:|--------------:|--------------:|----------:|
+|                   SumFor |            10 |       6.7518 ns |     0.1234 ns |     0.1154 ns |         - |
+|               SumForeach |            10 |       8.2227 ns |     0.0135 ns |     0.0120 ns |         - |
+|                  SumLinq |            10 |       8.1213 ns |     0.0145 ns |     0.0121 ns |         - |
+| SumArithmeticProgression |            10 |       0.9507 ns |     0.0067 ns |     0.0059 ns |         - |
+|                   SumFor |           100 |      65.3342 ns |     0.0634 ns |     0.0562 ns |         - |
+|               SumForeach |           100 |      74.9599 ns |     0.1939 ns |     0.1619 ns |         - |
+|                  SumLinq |           100 |      53.3228 ns |     0.0676 ns |     0.0565 ns |         - |
+| SumArithmeticProgression |           100 |       0.9564 ns |     0.0049 ns |     0.0039 ns |         - |
+|                   SumFor |          1000 |     585.1603 ns |     0.7109 ns |     0.6650 ns |         - |
+|               SumForeach |          1000 |     662.1417 ns |     0.5687 ns |     0.4749 ns |         - |
+|                  SumLinq |          1000 |     421.2751 ns |     0.6530 ns |     0.5453 ns |         - |
+| SumArithmeticProgression |          1000 |       0.9482 ns |     0.0085 ns |     0.0071 ns |         - |
+|                   SumFor |         10000 |   5,791.5375 ns |     7.5752 ns |     6.7152 ns |         - |
+|               SumForeach |         10000 |   6,544.7085 ns |    14.6121 ns |    13.6682 ns |         - |
+|                  SumLinq |         10000 |   4,100.5732 ns |     5.7219 ns |     5.3523 ns |         - |
+| SumArithmeticProgression |         10000 |       0.8839 ns |     0.0038 ns |     0.0030 ns |         - |

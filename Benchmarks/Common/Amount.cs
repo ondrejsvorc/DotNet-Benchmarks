@@ -25,4 +25,14 @@ public static class Amount
     /// Represents the value 10 000.
     /// </summary>
     public const int TenThousand = Ten * Thousand;
+
+    /// <summary>
+    /// Represents the value 100 000.
+    /// </summary>
+    public const int HundredThousand = Ten * TenThousand;
+
+    /// <summary>
+    /// Represents the value 1 000 000.
+    /// </summary>
+    public const int Milion = Ten * HundredThousand;
 }

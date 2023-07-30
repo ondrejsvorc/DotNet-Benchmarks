@@ -11,7 +11,13 @@ public class StringConcatenationBenchmarks
     /// </summary>
     private List<string> _strings = null!;
 
-    [Params(Amount.Ten, Amount.Hundred, Amount.Thousand)]
+    [Params
+     (
+        Amount.Ten,
+        Amount.Hundred,
+        Amount.Thousand
+     )
+    ]
     public int StringAmount { get; set; }
 
     [GlobalSetup]
