@@ -2,7 +2,13 @@
 
 All benchmarks used **.NET 7** and **BenchmarkDotNet** library.
 
+## Introduction
+
 The purpose of these benchmarks is to help developers identify the most efficient way based on their specific use cases.
+
+Take the results with a grain of salt and do not micro-optimize code at the expense of readability.
+
+Premature optimization is just something you want to avoid.
 
 ## String Concatenation Benchmarks
 - **'+' operator**
